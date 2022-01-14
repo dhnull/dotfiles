@@ -133,6 +133,12 @@ XF86AudioLowerVolume
     amixer sset Master playback 5%-
 XF86AudioMute
     amixer sset Master mute
+XF86AudioPrev
+    playerctl previous
+XF86AudioNext
+    playerctl next
+XF86AudioMedia
+    playerctl play-pause
 alt + b
     bash ~/.config/polybar/scripts/upBrightness.sh
 alt + v

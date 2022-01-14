@@ -26,8 +26,8 @@ git clone https://github.com/jwilm/alacritty
 cd alacritty
 cargo build --release && cp target/release/alacritty /usr/local/bin
 cd ..
-# Rofi - thunar - flameshot - feh - scrub - firejail - ranger
-apt install rofi thunar flameshot feh scrub firejail ranger -y
+# Rofi - thunar - flameshot - feh - scrub - firejail - ranger - playerctl
+apt install rofi thunar flameshot feh scrub firejail ranger playerctl -y
 # Picom
 cp -r ~/dotfiles/picom ~/.config/
 apt install meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-glx0-dev -y
