@@ -1,4 +1,4 @@
-# /-- KITTY --\ #
+# KITTY 
 super + Return
 	kitty
 
@@ -9,17 +9,17 @@ super + d
 super + shift + d
     rofi -show
 
-# /---- BSPWM HOTKEYS----\ #
+# --------------- BSPWM HOTKEYS ---------------
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# /-- QUIT/RESTART BSPWM--\ #
+# QUIT/RESTART BSPWM
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# /-- CLOSE AND KILL --\ #
+# CLOSE AND KILL
 super + {_,shift + }w
 	bspc node -{c,k}
 
@@ -153,32 +153,33 @@ XF86AudioPlay
 
 alt + b
 #XF86MonBrightnessUp
-    bash ~/.config/polybar/scripts/upBrightness.sh
+    brightnessctl set +10%
+
 alt + v
 #XF86MonBrightnessDown
-    bash ~/.config/polybar/scripts/downBrightness.sh
+    brightnessctl set 10%-
 
 
-# /---- APP's ----\ #
+# --------------- APP's ---------------
 
 super + l
     i3lock
 
-# /-- FIREFOX --\ #
+# FIREFOX
 alt + f
     firejail firefox
 
-# /-- SPOTIFY --\ #
+# SPOTIFY
 super + shift + s
 	spotify
 
-# /-- OBSIDIAN --\ #
+# OBSIDIAN
 alt + o
     ~/Descargas/Firefox/Obsidian.AppImage
 
 
-# /---- DEPENDENCIES ----\ #
+# --------------- DEPENDENCIES --------------- 
 
-# /-- AUDIO --\ #
+# AUDIO
 #apt install amixer # Parrot Security 
 #apt install playerctl # Parrot Security 
