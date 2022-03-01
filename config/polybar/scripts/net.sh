@@ -9,15 +9,15 @@ fi
 
 case $1 in
     "show-ip")
-        echo $net
+        echo -e "%{F#FFFFFF}  ${net}%{u-}"
         ;;
     "check_connection")
-        ping -c 4 archlinux.org > /dev/null 2>&1
+        ping -c 2 archlinux.org > /dev/null 2>&1
         if [ "$(echo $?)" != "0" ]
         then
-            echo "Disconect"
+            echo -e "%{F#BF1811} Disconect%{-u}"
         else
-            echo "Connect"
+            echo -e "%{F#FFFFFF}  Connect%{u-}"
         fi
         ;;
     *)
