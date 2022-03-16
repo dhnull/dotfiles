@@ -26,7 +26,7 @@ bspc config presel_feedback_color "#ebdbb2"
 bspc rule -a Brave-browser desktop='^3' follow=on focus=on 
 bspc rule -a Firefox desktop='^3' follow=on focus=on
 
-bspc rule -a Caja desktop='^4' state=floating follow=on focus=on
+bspc rule -a Caja desktop='^4' state=tiled follow=on focus=on
 bspc rule -a Thunar desktop='^4' state=floating follow=on focus=on
 
 bspc rule -a Spotify desktoop='^5' state=tiled
@@ -34,7 +34,7 @@ bspc rule -a Pavucontrol desktop='^6' state=floating follow=on focus=on
 
 bspc rule -a discord desktop='^7' follow=on focus=on
 # set wallpaper
-feh --bg-scale ~/Pictures/wallpapers/pixel.jpeg &
+feh --bg-scale ~/Pictures/wallpapers/daemon.jpg &
 
 # launch polybar
 ~/.config/polybar/./launch.sh
