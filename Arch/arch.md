@@ -127,7 +127,7 @@ sudo pacman -S qtile xterm
 ```
 # Install
 ```
-sudo pacman -S zsh lsd bat firejail flameshot unzip xf86-video-fbdev xclip thunar
+sudo pacman -S zsh lsd bat firejail flameshot unzip xf86-video-fbdev xclip thunar net-tools
 ```
 ```
 sudo usermod -s /usr/bin/zsh username
@@ -136,11 +136,21 @@ sudo usermod -s /usr/bin/zsh root
 ```
 sudo pacman -S kitty rofi
 ```
-# Audio Drivers
+# audio
 ```
 sudo pacman -S pulseaudio pulseaudio-alsa
 sudo pacman -S alsa-utils gst-plugins-base gst-plugins-base-libs
-sudo pacman -S pavucontrol
+sudo pacman -S pavucontrol playerctl
+```
+
+# brightness
+```
+sudo pacman -S brightnessctl
+```
+
+# usb
+```
+sudo pacman -s udisks2 udiskie ntfs-3g
 ```
 
 # Wallpaper
