@@ -1,6 +1,16 @@
+## Hora del sistema
 ```
 timedatectl set-ntp true
 ```
+## Cambiar distribución del teclado
+```
+loadkeys es
+```
+## Listar discos disponibles
+```
+lsblk
+```
+
 ```
 cfdisk
 ```
@@ -20,7 +30,7 @@ mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot # /dev/sda1 -> EFI partition
 ```
 ```
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt base base-devel linux linux-firmware xf86-video-intel
 ```
 ```
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -34,9 +44,9 @@ arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
 hwclock --systohc
 ```
-# Install NeoVim
+# Install net tools
 ```
-pacman -S neovim
+pacman -S neovim networkmanager wpa_supplicant wireless_tools grub efibootmgr
 ```
 #
 ```
